@@ -6,5 +6,4 @@ RUN apt install -y nodejs
 COPY frontend-example-docker .
 RUN npm install
 EXPOSE 5000
-ENV API_URL=http://localhost:8000
 CMD ["npm", "start"]

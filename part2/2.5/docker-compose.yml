@@ -9,6 +9,7 @@ services:
         - ./logs.txt:/usr/src/app/logs.txt
       environment:
         - REDIS=redis
+        - REDIS_PORT=6379
     app:
       image: frontend
       ports:
